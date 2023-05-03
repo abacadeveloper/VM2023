@@ -607,6 +607,17 @@ footer li:hover{
     margin-bottom: 20px;
 }
 
+.payment{
+    display: flex;
+}
+
+.payment i{
+    font-size: 2rem;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
 .copyright{
     background-color: #3f9cc1;
     width: 100%;
@@ -809,6 +820,13 @@ footer li:hover{
     footer .box li p{
         margin-left: 20px;
     }
+    
+     .payment{
+        justify-content: center;
+        margin: 0;
+    }
+
+
 
 
     
