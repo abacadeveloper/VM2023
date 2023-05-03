@@ -601,6 +601,11 @@ footer li:hover{
     cursor: pointer;
 }
 
+.logo-ft{
+    width: 150px;
+    height: 110px;
+    margin-bottom: 20px;
+}
 
 .copyright{
     background-color: #3f9cc1;
