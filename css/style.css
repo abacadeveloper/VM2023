@@ -79,6 +79,7 @@ header ul li a{
     font-weight: 400;
     color: #fff;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 header ul li a:hover{
@@ -137,6 +138,12 @@ header ul li a:hover{
 }
 
 
+#about{
+    margin-top: 290px;
+    margin-bottom: 180px;
+
+}
+
 .home .image img{
     position: absolute;
     top: 0;
@@ -144,6 +151,7 @@ header ul li a:hover{
     z-index: -1;
     width: 100%;
     height: 100vh;
+    object-fit: cover;
 }
 
 .home .text{
@@ -212,8 +220,10 @@ button{
 }
 
 /*ABOUT SECTION*/
+
+
 .top{
-    margin-top: 20%;
+    margin-bottom: 280px;
 }
 
 
@@ -308,6 +318,7 @@ button{
     background: url(../images/home-semok.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 480px;
     position: relative;
@@ -324,7 +335,7 @@ button{
     position: absolute;
     top: -13%;
     right: 10%;
-    padding-top: 10%;
+    padding-top: 5%;
     color: #fff;
 }
 
@@ -513,8 +524,51 @@ button{
     background: #C1B086 !important;
 }
 
+.map{
+    margin-bottom: 150px;
+}
+
 .map iframe{
     width: 100%;
+ 
+  
+}
+
+/*Contyact*/
+
+.contact{
+    border: 1px solid orange;
+    height: 40vh;
+}
+
+.contact .contact-main-col{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue
+
+}
+
+.contact .col-4{
+    border: 1px solid red;
+}
+
+.contact .col-4 ul li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 400px;
+    border: 1px solid blue;
+}
+
+.contact .col-4 ul li p {
+    padding-left: 20px;
+}
+
+.contact .col-4 ul li i{
+    font-size: 1.5rem;
 }
 
 footer h3{
@@ -531,6 +585,7 @@ footer li:hover{
     cursor: pointer;
 }
 
+
 .copyright{
     background-color: #3f9cc1;
     width: 100%;
@@ -539,9 +594,15 @@ footer li:hover{
     text-align: center;
 }
 
+
 /*Media QUERIES*/
 
 @media screen and (max-width:768px){
+
+    .top{
+        margin-bottom: 20px;
+    }
+    
 
     .home .image img{
         position: absolute;
@@ -550,11 +611,9 @@ footer li:hover{
         z-index: -1;
         width: 100%;
         height: 80vh;
-        
-    
-    
     }
 
+ 
 
     .home .box .text{
         max-width: 100%;
@@ -575,11 +634,18 @@ footer li:hover{
     }
 
    
-
-
-    .about{
-        margin-top: 200px;
+    #about{
+        margin-top: 400px;
+        margin-bottom: 160px;
+    
     }
+
+    #about .right{
+        margin-top: 50px;
+      
+    }
+
+  
     .restaurant .container,
     .about .container,
 
@@ -645,6 +711,8 @@ footer li:hover{
 
     .restaurant .flex{
         flex-direction: column-reverse;
+        margin-top: 15%;
+        
     }
 
     .wrapper{
@@ -683,9 +751,38 @@ footer li:hover{
         right: 50px;
         color: #fff;
     }
+    
+    .map{
+        margin: 50px 0;
+    }
+
+    .contact{
+        height: 100%;
+    }
+
+    .contact .contact-main-col{
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        height: 100%;
+    }
+
+    .contact .col-1{
+        text-align: center;
+    }
 
     .copyright{
         text-align: center;
+    }
+
+    footer .box li{
+        display: flex;
+        align-items: center;
+    }
+
+    footer .box li p{
+        margin-left: 20px;
     }
 
 
